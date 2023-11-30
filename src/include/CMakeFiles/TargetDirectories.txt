@@ -1,0 +1,3 @@
+/home/js/c++/ray-tracer/src/include/CMakeFiles/write_ppm.dir
+/home/js/c++/ray-tracer/src/include/CMakeFiles/edit_cache.dir
+/home/js/c++/ray-tracer/src/include/CMakeFiles/rebuild_cache.dir
