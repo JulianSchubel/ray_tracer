@@ -142,6 +142,19 @@ write_ppm/fast:
 	$(MAKE) $(MAKESILENT) -f bin_directories/CMakeFiles/write_ppm.dir/build.make bin_directories/CMakeFiles/write_ppm.dir/build
 .PHONY : write_ppm/fast
 
+#=============================================================================
+# Target rules for targets named vec3
+
+# Build rule for target.
+vec3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vec3
+.PHONY : vec3
+
+# fast build rule for target.
+vec3/fast:
+	$(MAKE) $(MAKESILENT) -f bin_directories/vec3/CMakeFiles/vec3.dir/build.make bin_directories/vec3/CMakeFiles/vec3.dir/build
+.PHONY : vec3/fast
+
 home/js/c++/ray-tracer/src/main.o: home/js/c++/ray-tracer/src/main.c++.o
 .PHONY : home/js/c++/ray-tracer/src/main.o
 
@@ -175,6 +188,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... output"
+	@echo "... vec3"
 	@echo "... write_ppm"
 	@echo "... home/js/c++/ray-tracer/src/main.o"
 	@echo "... home/js/c++/ray-tracer/src/main.i"

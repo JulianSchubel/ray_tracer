@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/js/c++/ray-tracer/src/include/write_ppm.c++" "src/include/CMakeFiles/write_ppm.dir/write_ppm.c++.o" "gcc" "src/include/CMakeFiles/write_ppm.dir/write_ppm.c++.o.d"
+  "/home/js/c++/ray-tracer/src/include/vec3/vec3.c++" "bin_directories/vec3/CMakeFiles/vec3.dir/vec3.c++.o" "gcc" "bin_directories/vec3/CMakeFiles/vec3.dir/vec3.c++.o.d"
   )
 
 # Targets to which this target links.

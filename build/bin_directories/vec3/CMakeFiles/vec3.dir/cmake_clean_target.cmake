@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libwrite_ppm.a"
+  "libvec3.a"
 )

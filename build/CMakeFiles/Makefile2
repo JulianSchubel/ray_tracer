@@ -81,15 +81,32 @@ clean: bin_directories/clean
 
 # Recursive "all" directory target.
 bin_directories/all: bin_directories/CMakeFiles/write_ppm.dir/all
+bin_directories/all: bin_directories/vec3/all
 .PHONY : bin_directories/all
 
 # Recursive "preinstall" directory target.
-bin_directories/preinstall:
+bin_directories/preinstall: bin_directories/vec3/preinstall
 .PHONY : bin_directories/preinstall
 
 # Recursive "clean" directory target.
 bin_directories/clean: bin_directories/CMakeFiles/write_ppm.dir/clean
+bin_directories/clean: bin_directories/vec3/clean
 .PHONY : bin_directories/clean
+
+#=============================================================================
+# Directory level rules for directory bin_directories/vec3
+
+# Recursive "all" directory target.
+bin_directories/vec3/all: bin_directories/vec3/CMakeFiles/vec3.dir/all
+.PHONY : bin_directories/vec3/all
+
+# Recursive "preinstall" directory target.
+bin_directories/vec3/preinstall:
+.PHONY : bin_directories/vec3/preinstall
+
+# Recursive "clean" directory target.
+bin_directories/vec3/clean: bin_directories/vec3/CMakeFiles/vec3.dir/clean
+.PHONY : bin_directories/vec3/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/output.dir
@@ -124,7 +141,7 @@ CMakeFiles/output.dir/clean:
 bin_directories/CMakeFiles/write_ppm.dir/all:
 	$(MAKE) $(MAKESILENT) -f bin_directories/CMakeFiles/write_ppm.dir/build.make bin_directories/CMakeFiles/write_ppm.dir/depend
 	$(MAKE) $(MAKESILENT) -f bin_directories/CMakeFiles/write_ppm.dir/build.make bin_directories/CMakeFiles/write_ppm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/js/c++/ray-tracer/build/CMakeFiles --progress-num=3,4 "Built target write_ppm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/js/c++/ray-tracer/build/CMakeFiles --progress-num=5,6 "Built target write_ppm"
 .PHONY : bin_directories/CMakeFiles/write_ppm.dir/all
 
 # Build rule for subdir invocation for target.
@@ -142,6 +159,32 @@ write_ppm: bin_directories/CMakeFiles/write_ppm.dir/rule
 bin_directories/CMakeFiles/write_ppm.dir/clean:
 	$(MAKE) $(MAKESILENT) -f bin_directories/CMakeFiles/write_ppm.dir/build.make bin_directories/CMakeFiles/write_ppm.dir/clean
 .PHONY : bin_directories/CMakeFiles/write_ppm.dir/clean
+
+#=============================================================================
+# Target rules for target bin_directories/vec3/CMakeFiles/vec3.dir
+
+# All Build rule for target.
+bin_directories/vec3/CMakeFiles/vec3.dir/all:
+	$(MAKE) $(MAKESILENT) -f bin_directories/vec3/CMakeFiles/vec3.dir/build.make bin_directories/vec3/CMakeFiles/vec3.dir/depend
+	$(MAKE) $(MAKESILENT) -f bin_directories/vec3/CMakeFiles/vec3.dir/build.make bin_directories/vec3/CMakeFiles/vec3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/js/c++/ray-tracer/build/CMakeFiles --progress-num=3,4 "Built target vec3"
+.PHONY : bin_directories/vec3/CMakeFiles/vec3.dir/all
+
+# Build rule for subdir invocation for target.
+bin_directories/vec3/CMakeFiles/vec3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/js/c++/ray-tracer/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin_directories/vec3/CMakeFiles/vec3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/js/c++/ray-tracer/build/CMakeFiles 0
+.PHONY : bin_directories/vec3/CMakeFiles/vec3.dir/rule
+
+# Convenience name for target.
+vec3: bin_directories/vec3/CMakeFiles/vec3.dir/rule
+.PHONY : vec3
+
+# clean rule for target.
+bin_directories/vec3/CMakeFiles/vec3.dir/clean:
+	$(MAKE) $(MAKESILENT) -f bin_directories/vec3/CMakeFiles/vec3.dir/build.make bin_directories/vec3/CMakeFiles/vec3.dir/clean
+.PHONY : bin_directories/vec3/CMakeFiles/vec3.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libwrite_ppm.a CMakeFiles/write_ppm.dir/write_ppm.c++.o
-/usr/bin/ranlib libwrite_ppm.a

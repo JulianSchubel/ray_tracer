@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/js/c++/ray-tracer
+CMAKE_SOURCE_DIR = /home/js/c++/ray-tracer/build
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/js/c++/ray-tracer
+CMAKE_BINARY_DIR = /home/js/c++/ray-tracer/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/js/c++/ray-tracer && $(CMAKE_COMMAND) -E cmake_progress_start /home/js/c++/ray-tracer/CMakeFiles /home/js/c++/ray-tracer/src/include//CMakeFiles/progress.marks
-	cd /home/js/c++/ray-tracer && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/include/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/js/c++/ray-tracer/CMakeFiles 0
+	cd /home/js/c++/ray-tracer/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/js/c++/ray-tracer/build/CMakeFiles /home/js/c++/ray-tracer/build/bin_directories/vec3//CMakeFiles/progress.marks
+	cd /home/js/c++/ray-tracer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin_directories/vec3/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/js/c++/ray-tracer/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/js/c++/ray-tracer && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/include/clean
+	cd /home/js/c++/ray-tracer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin_directories/vec3/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,56 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/js/c++/ray-tracer && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/include/preinstall
+	cd /home/js/c++/ray-tracer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin_directories/vec3/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/js/c++/ray-tracer && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/include/preinstall
+	cd /home/js/c++/ray-tracer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin_directories/vec3/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/js/c++/ray-tracer && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/js/c++/ray-tracer/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-src/include/CMakeFiles/write_ppm.dir/rule:
-	cd /home/js/c++/ray-tracer && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/include/CMakeFiles/write_ppm.dir/rule
-.PHONY : src/include/CMakeFiles/write_ppm.dir/rule
+bin_directories/vec3/CMakeFiles/vec3.dir/rule:
+	cd /home/js/c++/ray-tracer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin_directories/vec3/CMakeFiles/vec3.dir/rule
+.PHONY : bin_directories/vec3/CMakeFiles/vec3.dir/rule
 
 # Convenience name for target.
-write_ppm: src/include/CMakeFiles/write_ppm.dir/rule
-.PHONY : write_ppm
+vec3: bin_directories/vec3/CMakeFiles/vec3.dir/rule
+.PHONY : vec3
 
 # fast build rule for target.
-write_ppm/fast:
-	cd /home/js/c++/ray-tracer && $(MAKE) $(MAKESILENT) -f src/include/CMakeFiles/write_ppm.dir/build.make src/include/CMakeFiles/write_ppm.dir/build
-.PHONY : write_ppm/fast
+vec3/fast:
+	cd /home/js/c++/ray-tracer/build && $(MAKE) $(MAKESILENT) -f bin_directories/vec3/CMakeFiles/vec3.dir/build.make bin_directories/vec3/CMakeFiles/vec3.dir/build
+.PHONY : vec3/fast
 
-write_ppm.o: write_ppm.c++.o
-.PHONY : write_ppm.o
+vec3.o: vec3.c++.o
+.PHONY : vec3.o
 
 # target to build an object file
-write_ppm.c++.o:
-	cd /home/js/c++/ray-tracer && $(MAKE) $(MAKESILENT) -f src/include/CMakeFiles/write_ppm.dir/build.make src/include/CMakeFiles/write_ppm.dir/write_ppm.c++.o
-.PHONY : write_ppm.c++.o
+vec3.c++.o:
+	cd /home/js/c++/ray-tracer/build && $(MAKE) $(MAKESILENT) -f bin_directories/vec3/CMakeFiles/vec3.dir/build.make bin_directories/vec3/CMakeFiles/vec3.dir/vec3.c++.o
+.PHONY : vec3.c++.o
 
-write_ppm.i: write_ppm.c++.i
-.PHONY : write_ppm.i
+vec3.i: vec3.c++.i
+.PHONY : vec3.i
 
 # target to preprocess a source file
-write_ppm.c++.i:
-	cd /home/js/c++/ray-tracer && $(MAKE) $(MAKESILENT) -f src/include/CMakeFiles/write_ppm.dir/build.make src/include/CMakeFiles/write_ppm.dir/write_ppm.c++.i
-.PHONY : write_ppm.c++.i
+vec3.c++.i:
+	cd /home/js/c++/ray-tracer/build && $(MAKE) $(MAKESILENT) -f bin_directories/vec3/CMakeFiles/vec3.dir/build.make bin_directories/vec3/CMakeFiles/vec3.dir/vec3.c++.i
+.PHONY : vec3.c++.i
 
-write_ppm.s: write_ppm.c++.s
-.PHONY : write_ppm.s
+vec3.s: vec3.c++.s
+.PHONY : vec3.s
 
 # target to generate assembly for a file
-write_ppm.c++.s:
-	cd /home/js/c++/ray-tracer && $(MAKE) $(MAKESILENT) -f src/include/CMakeFiles/write_ppm.dir/build.make src/include/CMakeFiles/write_ppm.dir/write_ppm.c++.s
-.PHONY : write_ppm.c++.s
+vec3.c++.s:
+	cd /home/js/c++/ray-tracer/build && $(MAKE) $(MAKESILENT) -f bin_directories/vec3/CMakeFiles/vec3.dir/build.make bin_directories/vec3/CMakeFiles/vec3.dir/vec3.c++.s
+.PHONY : vec3.c++.s
 
 # Help Target
 help:
@@ -162,10 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... write_ppm"
-	@echo "... write_ppm.o"
-	@echo "... write_ppm.i"
-	@echo "... write_ppm.s"
+	@echo "... vec3"
+	@echo "... vec3.o"
+	@echo "... vec3.i"
+	@echo "... vec3.s"
 .PHONY : help
 
 
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/js/c++/ray-tracer && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/js/c++/ray-tracer/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

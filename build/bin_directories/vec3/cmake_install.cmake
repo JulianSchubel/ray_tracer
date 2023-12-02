@@ -1,4 +1,4 @@
-# Install script for directory: /home/js/c++/ray-tracer/src/include
+# Install script for directory: /home/js/c++/ray-tracer/src/include/vec3
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
