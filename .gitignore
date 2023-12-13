@@ -1,3 +1,4 @@
+/.gitignore
 /build/CMakeFiles
 /build/cmake_install.cmake
 /build/Makefile
