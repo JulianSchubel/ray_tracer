@@ -53,7 +53,54 @@ class vec3 {
         double e[3];
 };
 
-#ifndef VEC3_DEFINITION
-#include "./vec3.c++"
-#endif //VEC3_DEFINITION
+/* alias for vec3; provides geometric clarity in the code */
+using point3 = vec3;
+
+/* vec3 utilities */
+/* non member operator overloads */
+inline std::ostream& operator<<(std::ostream& out, const vec3& v) {
+    return out << v[0] << ' ' << v[1] << ' ' << v[2];
+}
+
+inline vec3 operator +(const vec3& u, const vec3& v) {
+    return vec3(u[0] + v[0], u[1] + v[1], u[2] + v[2]);
+}
+
+inline vec3 operator -(const vec3& u, const vec3& v) {
+    return vec3(u[0] - v[0], u[1] - v[1], u[2] - v[2]);
+}
+
+inline vec3 operator *(const vec3& u, const vec3& v) {
+    return vec3(u[0] * v[0], u[1] * v[1], u[2] * v[2]);
+}
+
+inline vec3 operator *(double t, const vec3& v) {
+    return vec3(t * v[0], t * v[1], t * v[2]);
+}
+
+/* make multiplication of vec3 and double commutative */
+inline vec3 operator *(const vec3& v, double t)  {
+    return t * v;
+}
+
+inline vec3 operator / (const vec3& v, double t) {
+    return (1/t) * v;
+}
+
+inline double dot_product(const vec3& u, const vec3& v) {
+    return ((u[0]* v[0]) + (u[1] * v[1]) + (u[2] * v[2]));
+}
+
+inline vec3 cross_product(const vec3& u, const vec3& v) {
+    return vec3( 
+        (u[1] * v[2]) - (u[2] * v[1]),
+        (u[2] * v[0]) - (u[0] * v[2]),
+        (u[0] * v[1]) - (v[0] * u[1])
+    );
+}
+
+inline vec3 unit_vector(const vec3& v) {
+    return v / v.length();
+}
+
 #endif //RT_VEC3_H

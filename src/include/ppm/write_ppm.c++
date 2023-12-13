@@ -4,10 +4,11 @@
 #include <fstream>
 #include <iostream>
 #include <ostream>
+#include "../colour/colour.h"
 
 /* each pixel is written on a row
  * when read the pixels are written out left to right */
-void display_ppm(const char * output_file) {
+void write_ppm(const char * output_file) {
     std::ofstream ofs(output_file);
     // image config
     // P3 indicates colors are in ASCII
@@ -33,8 +34,9 @@ void display_ppm(const char * output_file) {
             int xr = static_cast<int>(255.99 * r);
             int xg =  static_cast<int>(255.99 * g);
             int xb = static_cast<int>(255.99 * b);
-
-            ofs << '\r' << xr << ' ' << xg << ' ' << xb << ' ' << '\n';
+            
+            colour pixel_colour = colour(r, g, b);
+            write_colour(ofs, pixel_colour);
          }
     }
     std::clog << "\rDone.                           \n";

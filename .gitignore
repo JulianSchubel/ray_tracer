@@ -3,4 +3,6 @@
 ./build/cmake_install.cmake
 ./build/bin_directories
 ./build/CMakeFiles
+./build/
 ./build/bin_directories
+./build/bin_directories/*

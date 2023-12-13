@@ -1,2 +1,3 @@
 add_subdirectory(vec3)
-add_subdirectory(display)
+add_subdirectory(ppm)
+add_subdirectory(colour)

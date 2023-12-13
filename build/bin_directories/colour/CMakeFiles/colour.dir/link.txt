@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcolour.a CMakeFiles/colour.dir/colour.c++.o CMakeFiles/colour.dir/home/js/c++/ray-tracer/src/include/vec3/vec3.c++.o
+/usr/bin/ranlib libcolour.a
