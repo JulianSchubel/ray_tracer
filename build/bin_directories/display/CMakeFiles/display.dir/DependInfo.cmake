@@ -8,12 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/js/c++/ray-tracer/src/main.c++" "CMakeFiles/output.dir/home/js/c++/ray-tracer/src/main.c++.o" "gcc" "CMakeFiles/output.dir/home/js/c++/ray-tracer/src/main.c++.o.d"
+  "/home/js/c++/ray-tracer/src/include/display/display_ppm.c++" "bin_directories/display/CMakeFiles/display.dir/display_ppm.c++.o" "gcc" "bin_directories/display/CMakeFiles/display.dir/display_ppm.c++.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/js/c++/ray-tracer/build/bin_directories/display/CMakeFiles/display.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

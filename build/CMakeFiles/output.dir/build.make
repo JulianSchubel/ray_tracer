@@ -92,7 +92,7 @@ output_EXTERNAL_OBJECTS =
 
 bin/output: CMakeFiles/output.dir/home/js/c++/ray-tracer/src/main.c++.o
 bin/output: CMakeFiles/output.dir/build.make
-bin/output: bin_directories/libwrite_ppm.a
+bin/output: bin_directories/display/libdisplay.a
 bin/output: CMakeFiles/output.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/js/c++/ray-tracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/output"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/output.dir/link.txt --verbose=$(VERBOSE)

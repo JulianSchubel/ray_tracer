@@ -12,6 +12,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
   "CMakeLists.txt"
   "/home/js/c++/ray-tracer/src/include/CMakeLists.txt"
+  "/home/js/c++/ray-tracer/src/include/display/CMakeLists.txt"
   "/home/js/c++/ray-tracer/src/include/vec3/CMakeLists.txt"
   "/usr/share/cmake-3.22/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake"
@@ -43,11 +44,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "bin_directories/CMakeFiles/CMakeDirectoryInformation.cmake"
   "bin_directories/vec3/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "bin_directories/display/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/output.dir/DependInfo.cmake"
-  "bin_directories/CMakeFiles/write_ppm.dir/DependInfo.cmake"
   "bin_directories/vec3/CMakeFiles/vec3.dir/DependInfo.cmake"
+  "bin_directories/display/CMakeFiles/display.dir/DependInfo.cmake"
   )

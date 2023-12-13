@@ -1,9 +1,11 @@
 /home/js/c++/ray-tracer/build/CMakeFiles/output.dir
 /home/js/c++/ray-tracer/build/CMakeFiles/edit_cache.dir
 /home/js/c++/ray-tracer/build/CMakeFiles/rebuild_cache.dir
-/home/js/c++/ray-tracer/build/bin_directories/CMakeFiles/write_ppm.dir
 /home/js/c++/ray-tracer/build/bin_directories/CMakeFiles/edit_cache.dir
 /home/js/c++/ray-tracer/build/bin_directories/CMakeFiles/rebuild_cache.dir
 /home/js/c++/ray-tracer/build/bin_directories/vec3/CMakeFiles/vec3.dir
 /home/js/c++/ray-tracer/build/bin_directories/vec3/CMakeFiles/edit_cache.dir
 /home/js/c++/ray-tracer/build/bin_directories/vec3/CMakeFiles/rebuild_cache.dir
+/home/js/c++/ray-tracer/build/bin_directories/display/CMakeFiles/display.dir
+/home/js/c++/ray-tracer/build/bin_directories/display/CMakeFiles/edit_cache.dir
+/home/js/c++/ray-tracer/build/bin_directories/display/CMakeFiles/rebuild_cache.dir

@@ -1,1 +1,1 @@
-/usr/bin/c++ -rdynamic CMakeFiles/output.dir/home/js/c++/ray-tracer/src/main.c++.o -o bin/output  bin_directories/libwrite_ppm.a 
+/usr/bin/c++ -rdynamic CMakeFiles/output.dir/home/js/c++/ray-tracer/src/main.c++.o -o bin/output  bin_directories/display/libdisplay.a 

@@ -1,12 +1,14 @@
 #ifndef RT_PPM_OUTPUT_H
 #define RT_PPM_OUTPUT_H
 
+#include <fstream>
 #include <iostream>
 #include <ostream>
 
 /* each pixel is written on a row
  * when read the pixels are written out left to right */
-void write_ppm() {
+void display_ppm(const char * output_file) {
+    std::ofstream ofs(output_file);
     // image config
     // P3 indicates colors are in ASCII
     std::string netpbm_magic_number = "P3";
@@ -14,7 +16,7 @@ void write_ppm() {
     int image_height = 256;
     int maximum_colour_value = 255;
 
-    std::cout << netpbm_magic_number << '\n' 
+    ofs << netpbm_magic_number << '\n' 
         << image_width << ' ' << image_height << '\n' 
         << maximum_colour_value << '\n';
 
@@ -32,7 +34,7 @@ void write_ppm() {
             int xg =  static_cast<int>(255.99 * g);
             int xb = static_cast<int>(255.99 * b);
 
-            std::cout << '\r' << xr << ' ' << xg << ' ' << xb << ' ' << '\n';
+            ofs << '\r' << xr << ' ' << xg << ' ' << xb << ' ' << '\n';
          }
     }
     std::clog << "\rDone.                           \n";

@@ -116,44 +116,6 @@ depend:
 	cd /home/js/c++/ray-tracer/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-bin_directories/CMakeFiles/write_ppm.dir/rule:
-	cd /home/js/c++/ray-tracer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin_directories/CMakeFiles/write_ppm.dir/rule
-.PHONY : bin_directories/CMakeFiles/write_ppm.dir/rule
-
-# Convenience name for target.
-write_ppm: bin_directories/CMakeFiles/write_ppm.dir/rule
-.PHONY : write_ppm
-
-# fast build rule for target.
-write_ppm/fast:
-	cd /home/js/c++/ray-tracer/build && $(MAKE) $(MAKESILENT) -f bin_directories/CMakeFiles/write_ppm.dir/build.make bin_directories/CMakeFiles/write_ppm.dir/build
-.PHONY : write_ppm/fast
-
-write_ppm.o: write_ppm.c++.o
-.PHONY : write_ppm.o
-
-# target to build an object file
-write_ppm.c++.o:
-	cd /home/js/c++/ray-tracer/build && $(MAKE) $(MAKESILENT) -f bin_directories/CMakeFiles/write_ppm.dir/build.make bin_directories/CMakeFiles/write_ppm.dir/write_ppm.c++.o
-.PHONY : write_ppm.c++.o
-
-write_ppm.i: write_ppm.c++.i
-.PHONY : write_ppm.i
-
-# target to preprocess a source file
-write_ppm.c++.i:
-	cd /home/js/c++/ray-tracer/build && $(MAKE) $(MAKESILENT) -f bin_directories/CMakeFiles/write_ppm.dir/build.make bin_directories/CMakeFiles/write_ppm.dir/write_ppm.c++.i
-.PHONY : write_ppm.c++.i
-
-write_ppm.s: write_ppm.c++.s
-.PHONY : write_ppm.s
-
-# target to generate assembly for a file
-write_ppm.c++.s:
-	cd /home/js/c++/ray-tracer/build && $(MAKE) $(MAKESILENT) -f bin_directories/CMakeFiles/write_ppm.dir/build.make bin_directories/CMakeFiles/write_ppm.dir/write_ppm.c++.s
-.PHONY : write_ppm.c++.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,10 +124,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... write_ppm"
-	@echo "... write_ppm.o"
-	@echo "... write_ppm.i"
-	@echo "... write_ppm.s"
 .PHONY : help
 
 

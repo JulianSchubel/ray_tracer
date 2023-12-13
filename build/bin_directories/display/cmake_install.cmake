@@ -1,4 +1,4 @@
-# Install script for directory: /home/js/c++/ray-tracer/src/include
+# Install script for directory: /home/js/c++/ray-tracer/src/include/display
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,12 +40,5 @@ endif()
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/home/js/c++/ray-tracer/build/bin_directories/vec3/cmake_install.cmake")
-  include("/home/js/c++/ray-tracer/build/bin_directories/display/cmake_install.cmake")
-
 endif()
 

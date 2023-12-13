@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/js/c++/ray-tracer/build/CMakeFiles /home/js/c++/ray-tracer/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/js/c++/ray-tracer/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/js/c++/ray-tracer/build/CMakeFiles /home/js/c++/ray-tracer/build/bin_directories/display//CMakeFiles/progress.marks
+	cd /home/js/c++/ray-tracer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin_directories/display/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/js/c++/ray-tracer/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/js/c++/ray-tracer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin_directories/display/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,81 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/js/c++/ray-tracer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin_directories/display/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/js/c++/ray-tracer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin_directories/display/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/js/c++/ray-tracer/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named output
+# Convenience name for target.
+bin_directories/display/CMakeFiles/display.dir/rule:
+	cd /home/js/c++/ray-tracer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin_directories/display/CMakeFiles/display.dir/rule
+.PHONY : bin_directories/display/CMakeFiles/display.dir/rule
 
-# Build rule for target.
-output: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 output
-.PHONY : output
-
-# fast build rule for target.
-output/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/build
-.PHONY : output/fast
-
-#=============================================================================
-# Target rules for targets named vec3
-
-# Build rule for target.
-vec3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vec3
-.PHONY : vec3
-
-# fast build rule for target.
-vec3/fast:
-	$(MAKE) $(MAKESILENT) -f bin_directories/vec3/CMakeFiles/vec3.dir/build.make bin_directories/vec3/CMakeFiles/vec3.dir/build
-.PHONY : vec3/fast
-
-#=============================================================================
-# Target rules for targets named display
-
-# Build rule for target.
-display: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 display
+# Convenience name for target.
+display: bin_directories/display/CMakeFiles/display.dir/rule
 .PHONY : display
 
 # fast build rule for target.
 display/fast:
-	$(MAKE) $(MAKESILENT) -f bin_directories/display/CMakeFiles/display.dir/build.make bin_directories/display/CMakeFiles/display.dir/build
+	cd /home/js/c++/ray-tracer/build && $(MAKE) $(MAKESILENT) -f bin_directories/display/CMakeFiles/display.dir/build.make bin_directories/display/CMakeFiles/display.dir/build
 .PHONY : display/fast
 
-home/js/c++/ray-tracer/src/main.o: home/js/c++/ray-tracer/src/main.c++.o
-.PHONY : home/js/c++/ray-tracer/src/main.o
+display_ppm.o: display_ppm.c++.o
+.PHONY : display_ppm.o
 
 # target to build an object file
-home/js/c++/ray-tracer/src/main.c++.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/home/js/c++/ray-tracer/src/main.c++.o
-.PHONY : home/js/c++/ray-tracer/src/main.c++.o
+display_ppm.c++.o:
+	cd /home/js/c++/ray-tracer/build && $(MAKE) $(MAKESILENT) -f bin_directories/display/CMakeFiles/display.dir/build.make bin_directories/display/CMakeFiles/display.dir/display_ppm.c++.o
+.PHONY : display_ppm.c++.o
 
-home/js/c++/ray-tracer/src/main.i: home/js/c++/ray-tracer/src/main.c++.i
-.PHONY : home/js/c++/ray-tracer/src/main.i
+display_ppm.i: display_ppm.c++.i
+.PHONY : display_ppm.i
 
 # target to preprocess a source file
-home/js/c++/ray-tracer/src/main.c++.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/home/js/c++/ray-tracer/src/main.c++.i
-.PHONY : home/js/c++/ray-tracer/src/main.c++.i
+display_ppm.c++.i:
+	cd /home/js/c++/ray-tracer/build && $(MAKE) $(MAKESILENT) -f bin_directories/display/CMakeFiles/display.dir/build.make bin_directories/display/CMakeFiles/display.dir/display_ppm.c++.i
+.PHONY : display_ppm.c++.i
 
-home/js/c++/ray-tracer/src/main.s: home/js/c++/ray-tracer/src/main.c++.s
-.PHONY : home/js/c++/ray-tracer/src/main.s
+display_ppm.s: display_ppm.c++.s
+.PHONY : display_ppm.s
 
 # target to generate assembly for a file
-home/js/c++/ray-tracer/src/main.c++.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/home/js/c++/ray-tracer/src/main.c++.s
-.PHONY : home/js/c++/ray-tracer/src/main.c++.s
+display_ppm.c++.s:
+	cd /home/js/c++/ray-tracer/build && $(MAKE) $(MAKESILENT) -f bin_directories/display/CMakeFiles/display.dir/build.make bin_directories/display/CMakeFiles/display.dir/display_ppm.c++.s
+.PHONY : display_ppm.c++.s
 
 # Help Target
 help:
@@ -188,11 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... display"
-	@echo "... output"
-	@echo "... vec3"
-	@echo "... home/js/c++/ray-tracer/src/main.o"
-	@echo "... home/js/c++/ray-tracer/src/main.i"
-	@echo "... home/js/c++/ray-tracer/src/main.s"
+	@echo "... display_ppm.o"
+	@echo "... display_ppm.i"
+	@echo "... display_ppm.s"
 .PHONY : help
 
 
@@ -204,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/js/c++/ray-tracer/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
