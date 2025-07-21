@@ -2,10 +2,12 @@ use std::fs::File;
 use std::io;
 use std::io::prelude::*;
 
-/* Ppm: Unit-like struct upon which associated functions are implemented for the PPM file format */
+/* Ppm: Unit-like struct upon which associated functions are implemented for the PPM (Portable
+* Pixmap) file format */
 pub struct Ppm{}
 
 impl Ppm {
+    /* output a test ppm file */
     pub fn test(width: u32, height: u32) -> io::Result<()> {
         File::options().append(true);
         let mut f = File::create("./test.ppm")?;

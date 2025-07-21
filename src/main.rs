@@ -1,4 +1,4 @@
-use ray_tracer::{format, vec3};
+use ray_tracer::{format};
 use std::io;
 
 
@@ -13,8 +13,5 @@ fn main() -> io::Result<()> {
     ];
     format::Ppm::write("./fmt.ppm", 3, 2, &content)?;
     format::Ppm::test(256, 256)?;
-
-    let v = vec3::Vec3::new();
-    println!("{:?}", v);
     return Ok(());
 }
